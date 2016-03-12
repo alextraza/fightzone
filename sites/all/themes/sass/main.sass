@@ -1,0 +1,388 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "fightzone/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+#content
+	margin-top: 40px
+	border-top: 1px solid #c4c4c4
+	border-right: 1px solid #c4c4c4
+	border-bottom: 1px solid #393939
+	border-left: 1px solid #393939
+	background: rgba(197, 197, 197, 0.9)
+
+.main
+	color: #fff
+	background: #484747
+	margin-left: -30px
+	border-left: 1px solid #393939
+	.node
+		border-top: 1px solid #B3B2B3
+		h2
+			margin: 0
+			font-family: RobotoBold, sans-serif
+			font-size: em(18px)
+			opacity: 0.7
+			margin-bottom: 10px
+			a
+				color: #fff
+		>div
+			border-bottom: 1px solid #000
+			padding: 5px 30px 20px 30px
+		.field-label
+			font-size: em(14px)
+			font-family: RobotoCondensedBold, sans-serif
+			float: left
+			padding-top: 2px
+		.field-label-above
+			.field-items
+				.field-item
+					font-family: RobotoCondensedBold, sans-serif
+					font-size: em(15px)
+					margin-left: 6px
+					display: inline-block
+					opacity: 0.7
+					text-shadow: 1px 1px 1px #000
+					transition: all .2s ease
+					&:hover
+						transform: scale(1.05)
+						text-shadow: 1px 1px 10px #000
+					a
+						color: #fff
+
+.stiky
+	position: fixed
+	top: 0
+	
+aside
+	.side-title, h2
+		margin: 0
+		font-family: RobotoBold, sans-serif
+		font-size: em(20px)
+		border-bottom: 1px solid #393939
+		padding: 6px 10px 6px 35px
+	h2
+		font-size: em(18)
+		border-bottom: none
+	.block-menu
+		border-top: 1px solid #eaeaea
+		padding-top: 2px
+		ul.menu
+			text-transform: uppercase
+			font-family: RobotoCondensedRegular, sans-serif
+			font-size: em(15px)
+			margin: 0
+			padding-left: 35px
+			li
+				list-style: none
+				margin: 0
+				padding: 0
+		a
+			color: #000
+			display: block
+			padding: 4px 0
+			&.active
+				padding-left: 20px
+				font-size: em(16px)
+				&:before
+					content: '>> '
+			&:hover
+				text-decoration: none
+				padding-left: 20px
+				color: #000
+				transition: all ease-in-out 0.5s
+			&:focus
+				outline: none
+				padding-left: 20px
+				text-decoration: none
+				color: #000
+	.banners
+		text-align: center
+
+.title
+	h1
+		text-shadow: 1px 1px 1px #000
+		font-family: RobotoBold, sans-serif
+		font-size: em(20px)
+		padding: 6px 10px 6px 30px
+		margin: 0
+
+.field-name-field-poster
+	float: left
+	border: 1px solid #fff
+	margin-right: 20px
+	margin-bottom: 20px
+
+.field-name-body
+	margin-top: -1em
+	line-height: 1.3
+	.field-item
+		font-family: RobotoRegular, sans-serif
+
+.field-name-field-members
+	margin-top: 10px
+	margin-bottom: 10px
+	>.field-items
+		display: block !important
+		margin-left: 75px !important
+		>.field-item
+			display: inline
+			margin-left: 15px
+			line-height: 1.3
+			font-size: em(15px)
+
+.field-name-field-screenshots
+	&:after
+		content: '_____'
+		opacity: 0
+		height: 10px
+		clear: both
+	.field-item
+		transition: all .5s ease
+		float: left
+		width: 33.33%
+		padding: 10px
+		&:hover
+			transform: scale(1.1)
+		a
+			transition: all .5s ease
+			display: block
+			&:focus
+				outline: none
+			&:hover
+				box-shadow: 0 0 20px 2px #000
+			img
+				width: 100%
+				height: 100%
+				border: 1px solid #fff
+
+.field-name-field-video-links
+
+.node-date
+	float: right
+	font-family: RobotoCondensedRegular, sans-serif
+
+.links
+	display: inline-block
+	text-align: center
+	ul.inline
+		li
+			margin: 0
+			padding: 0
+			a
+				color: #fff
+				display: inline-block
+				width: 130px
+				height: 30px
+				background: #7f7f7f
+				border: 1px solid #fff
+				font-family: RobotoBold, sans-serif
+				text-shadow: 1px 1px 1px #000
+				&:hover
+					box-shadow: 1px 1px 5px 1px #000
+
+.breadcrumb
+	padding: 0 35px 0 30px
+	a
+		color: #fff
+		font-family: RobotoCondensedRegular, sans-serif
+		font-size: em(14px)
+
+.taxonomy-term-description
+	display: none
+
+.node-type-video
+	.title
+		display: none
+
+iframe
+	border: 1px solid #fff
+	width: 100%
+
+.tabs
+	margin-bottom: 0 !important
+	border-bottom: none !important
+	a
+		@include border-top-radius(7px);
+		display: inline-block !important
+		padding: 5px !important
+		background: #3f3f3f !important
+		border: 1px solid #000 !important
+		border-bottom: none !important
+		color: #a8a8a8
+		text-shadow: 1px 1px 1px #000
+		font-family: RobotoCondensedBold, sans-serif
+		&.active
+			background-color: #1d1d1d !important
+			color: #a8a8a8 !important
+		&:hover
+			background: #1d1d1d !important
+
+#edit-name, #edit-comment-body-und-0-value, #edit-pass, #edit-captcha-response
+	width: 100%
+	background: #c8c8c8
+	border: 1px solid #000
+	box-shadow: 0px 0px 3px #fff
+	color: #000
+	padding-left: 10px
+	&:focus
+		outline: none
+
+#edit-captcha-response
+	width: 80px
+
+#edit-comment-body-und-0-value
+	resize: none
+.grippie
+	display: none
+
+#edit-submit
+	color: #fff
+	float: right
+	background: #7f7f7f
+	border: 1px solid #fff
+	font-family: RobotoBold, sans-serif
+	text-shadow: 1px 1px 1px #000
+	&:hover
+		box-shadow: 1px 1px 5px 1px #000
+
+#user-login
+	padding: 0 35px
+
+label
+	display: none !important
+
+.comment
+	clear: both
+
+
+.comment-wrap
+	border-top: 1px solid #000
+	margin-top: 20px
+	&:before
+		content: ''
+		border-top: 1px solid #b3b2b3
+		display: block
+	.user
+		float: left
+		font-family: RobotoBold, sans-serif
+		padding-top: 10px
+		padding-right: 10px
+		a
+			color: #fff
+
+	.date
+		font-size: em(14px)
+		padding-top: 13px
+	.content
+		margin-top: 10px
+		padding-bottom: 20px
+	.comment-reply
+		float: right
+
+.page-comment
+	.comment
+		padding-left: 35px
+		padding-right: 35px
+		&-form
+			padding: 0 35px
+
+
+.comment-wrap
+	ul.inline
+		li
+			margin: 0
+			padding: 0
+			a
+				color: #fff
+				display: inline-block
+				width: 130px
+				height: 30px
+				background: #7f7f7f
+				border: 1px solid #fff
+				font-family: RobotoBold, sans-serif
+				text-shadow: 1px 1px 1px #000
+				&:hover
+					box-shadow: 1px 1px 5px 1px #000
+
+
+footer
+	padding-top: 10px
+	.logo
+		transform: scale(0.8)
+	.site-name
+		font-family: RobotoCondensedBold, sans-serif
+		font-size: em(33px)
+		padding-top: 30px
+		display: block
+		a
+			color: #fff
+
+.region-copyright
+	padding: 10px 0
+	text-align: center
+	>div
+		font-size: em(14px)
+		color: #fff
+		display: inline-block
+		padding-right: 20px
+		a
+			font-family: RobotoBold
+			color: #fff
+			opacity: 0.7
+			padding-left: 5px
+.region-footer-banner
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+
+.item-list
+	margin-top: 10px
+	ul.pager
+		li
+			margin: 0
+			font-family: RobotoRegular
+			font-size: em(14px)
+			height: 30px
+			min-width: 30px
+			border: 1px solid #fff
+			padding: 3px
+			display: inline-block
+			&.pager-current
+				background: #7f7f7f
+				&:hover
+					transform: none
+			&:hover
+				transform: scale(1.05)
+			a
+				display: block
+				color: #fff
+
+//ALWAYS END
+@import "media"

@@ -1,0 +1,17 @@
+name        = fightzone
+description = Тема для сайта FIGHTZONE
+
+core        = 7.x
+engine      = phptemplate
+
+regions[top_banner] = Top right banner
+regions[top_search] = Search area in top of page
+regions[sidebar] = Sidebar
+regions[sidebar_banners] = Banners zone on sidebar
+regions[content] = Content
+regions[highlighted] = Highlighted
+regions[highlighted] = Highlighted
+regions[footer_banner] = Bottom banner place
+regions[footer_stat] = Statistiq place
+regions[copyright] = Copyright
+
